@@ -1,0 +1,104 @@
+/* start configs */
+@import url("normalize.css");
+
+:root {
+    --color-grey: #282828;
+    --color-white: #fff;
+    --font-size-md: 20px;
+    --font-size-lg: 36px;
+    --font-size-xl: 48px;
+    --font:'Roboto', sans-serif;
+    --fontBold:"RobotoBold";
+}
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+/* /start configs */
+body{
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    font-family: var(--font);
+}
+.section-inner{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.hidden{
+    display: none;
+}
+h1{
+    padding: 0;
+    margin: 0 0 50px;
+    font-size: var(--font-size-xl);
+}
+h2{
+    padding: 0;
+    margin: 50px 0 0;
+    font-size: var(--font-size-md);
+}
+span{
+    font-size: var(--font-size-lg); 
+}
+
+.form-group + .form-group{
+    margin-top: 24px;
+}
+.form-group--row{
+    display: flex;
+}
+.form-group--row + .form-group--row{
+    margin-top: 12px;
+}
+.control--col{
+    flex-direction: column;
+}
+.form-group--row__title{
+    margin-top: 18px;
+    margin-right: 12px;
+}
+.form-group__title{
+    font-size: var(--font-size-md);
+}
+
+.form-group__control{
+    display: flex;
+    margin-top: 8px;
+}
+
+.control__input{
+    display: block;
+    width: 100%;
+    font-family: var(--font);
+    padding: 0;
+    margin: 0;
+    font-size:var(--font-size-lg);
+    color: var(--color-white);
+    background: none;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-bottom-color:var(--font);
+}
+.control__btn{
+    padding: 8px 20px;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--color-white);
+    background: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size:var(--font-size-md);
+    border: 1px solid transparent;
+    transition: .2s;
+}
+.control__btn:hover,:active{
+    border-color: var(--color-white);
+}
+.control__btn + .control__btn{
+    margin-left: 12px;
+}
+
+
+
